@@ -3,42 +3,30 @@ page {
   --main_size: 88rpx;
   --main_gray: #d8d8d8;
   --main_gap: 20rpx;
-  --main_color: #394F3E;
-  --main_orange: #DB6D28;
+  --main_color: #394f3e;
+  --main_orange: #db6d28;
   --top_color: #999;
   --middle_color: #999;
   --lower_color: #999;
-  --bg_color: #F4EFE9;
+  --bg_color: #f4efe9;
   --main_radius: 16rpx;
   --main_line: 2rpx solid #999;
   color: #333;
   font-size: 28rpx;
-  height: 100%;
+  background-color: var(--bg_color);
 }
 
-page,
-view,
-navigator,
-scroll-view,
-cover-view,
-button,
-input,
-textarea,
-form {
+page, view, navigator, scroll-view, cover-view, button, input, textarea, form {
   box-sizing: border-box;
 }
 
-button,
-.button,
-input,
-textarea {
+button, .button, input, textarea {
   cursor: pointer;
   outline: none;
   resize: none;
 }
 
-input,
-textarea {
+input, textarea {
   cursor: text;
   padding: var(--main_gap);
   border: var(--main_line);
@@ -87,12 +75,14 @@ button::after {
 }
 
 /* 方块 */
+
 .square {
   width: var(--main_size);
   height: var(--main_size);
 }
 
 /* 定位 */
+
 .relative {
   position: relative;
 }
@@ -111,6 +101,7 @@ button::after {
 }
 
 /* 布局 */
+
 .flex {
   display: flex;
 }
@@ -124,44 +115,35 @@ button::after {
   flex-wrap: wrap;
 }
 
-.flex.jcfe,
-.flex-column.jcfe {
+.flex.jcfe, .flex-column.jcfe {
   justify-content: flex-end;
 }
 
-
-.flex.jcsb,
-.flex-column.jcsb {
+.flex.jcsb, .flex-column.jcsb {
   justify-content: space-between;
 }
 
-.flex.jcsa,
-.flex-column.jcsa {
+.flex.jcsa, .flex-column.jcsa {
   justify-content: space-around;
 }
 
-.flex.jcse,
-.flex-column.jcse {
+.flex.jcse, .flex-column.jcse {
   justify-content: space-evenly;
 }
 
-.flex.jcc,
-.flex-column.jcc {
+.flex.jcc, .flex-column.jcc {
   justify-content: center;
 }
 
-.flex.aic,
-.flex-column.aic {
+.flex.aic, .flex-column.aic {
   align-items: center;
 }
 
-.flex.aifs,
-.flex-column.aifs {
+.flex.aifs, .flex-column.aifs {
   align-items: flex-start;
 }
 
-.flex.aife,
-.flex-column.aife {
+.flex.aife, .flex-column.aife {
   align-items: flex-end;
 }
 

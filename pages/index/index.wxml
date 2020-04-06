@@ -1,1 +1,3 @@
-<card-cat wx:for="{{list}}" wx:key="objectId" item="{{item}}"></card-cat>
+<navigator class="mb-20" url="{{'/pages/detail/index?objectId=' + item.objectId}}" wx:for="{{list}}" wx:key="objectId">
+  <card-cat item="{{item}}"></card-cat>
+</navigator>
