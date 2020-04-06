@@ -1,0 +1,57 @@
+page {
+  background-color: #f4efe9;
+  padding-bottom: 20rpx;
+}
+
+.box {
+  background-color: white;
+}
+
+.line-box {
+  padding: 20rpx 40rpx 0;
+}
+
+.line-box:last-child {
+  padding: 20rpx 40rpx;
+}
+
+.title, .cell {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 200;
+  color: rgba(148, 148, 148, 1);
+}
+
+.value, .content {
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  color: rgba(56, 56, 56, 1);
+}
+
+.cell {
+  padding: 40rpx 40rpx 20rpx;
+}
+
+.content {
+  padding: 20rpx 40rpx 40rpx;
+  border-top: 2rpx solid #eee;
+}
+
+.fab {
+  position: fixed;
+  right: 40rpx;
+  bottom: 80rpx;
+  width: 80rpx;
+  height: 80rpx;
+  font-size: 48rpx;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 0 4rpx black;
+  color: white;
+}
+
+.fab image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

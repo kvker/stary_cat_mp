@@ -1,0 +1,1 @@
+<card-cat wx:for="{{list}}" wx:key="objectId" item="{{item}}"></card-cat>

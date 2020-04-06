@@ -1,0 +1,75 @@
+<swiper style="height: 600rpx;" indicator-dots autoplay duration="300">
+  <swiper-item wx:for="{{detail.imgs}}" wx:key="*this" bindtap="previewImg" data-url="{{item}}" data-idx="{{index}}">
+    <view class="swiper-item uni-bg-red">
+      <image class="w-100" style="height: 600rpx;" src="{{item}}" mode="aspectFill"></image>
+    </view>
+  </swiper-item>
+</swiper>
+<view class="box mt-20">
+  <view class="line-box flex">
+    <view class="flex aic f1 title-box">
+      <text class="title">花名</text>
+      <text class="value ml-20">{{detail.name}}</text>
+    </view>
+    <view class="flex aic f1 value-box">
+      <text class="title">编号</text>
+      <text class="value ml-20">{{detail.id}}</text>
+    </view>
+  </view>
+  <view class="line-box flex">
+    <view class="flex aic f1 title-box">
+      <text class="title">性别</text>
+      <text class="value ml-20">{{detail.sex_label}}</text>
+    </view>
+    <view class="flex aic f1 value-box">
+      <text class="title">品种</text>
+      <text class="value ml-20">{{detail.category_label}}</text>
+    </view>
+  </view>
+  <view class="line-box flex">
+    <view class="flex aic f1 title-box">
+      <text class="title">猫龄</text>
+      <text class="value ml-20">{{detail.age_label}}</text>
+    </view>
+    <view class="flex aic f1 value-box">
+      <text class="title">是否绝育</text>
+      <text class="value ml-20">{{detail.jueyu_label}}</text>
+    </view>
+  </view>
+  <view class="line-box flex">
+    <view class="flex aic f1 title-box">
+      <text class="title">体内驱虫</text>
+      <text class="value ml-20">{{detail.quchong_inner_label}}</text>
+    </view>
+    <view class="flex aic f1 value-box">
+      <text class="title">体外驱虫</text>
+      <text class="value ml-20">{{detail.quchong_outer_label}}</text>
+    </view>
+  </view>
+  <view class="line-box flex">
+    <view class="flex aic f1 title-box">
+      <text class="title">领养适合度</text>
+      <text class="value ml-20">{{detail.lingyang_label}}</text>
+    </view>
+    <view class="flex aic f1 value-box">
+      <text class="title">居住地</text>
+      <text class="value ml-20">{{detail.address}}</text>
+    </view>
+  </view>
+</view>
+<view class="box mt-20">
+  <view class="cell">
+    外观描述
+  </view>
+  <view class="content">
+    {{detail.waiguan}}
+  </view>
+</view>
+<view class="box mt-20">
+  <view class="cell">
+    性格描述
+  </view>
+  <view class="content">
+    {{detail.xingge}}
+  </view>
+</view>
